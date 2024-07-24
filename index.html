@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="content/favicon-img.png">
+
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header"> 
+        <h1>Asier Acuña</h1>
+        <h2>Computer Science and Artificial Intelligence student</h2>
+        <div id="header-div">
+            <img id="world-icon" src="content/world-icon.png" alt="World Icon">
+            <p>Pontevedra, Spain</p>
+        </div>
+        <div class="header-right">
+            <div class="social-media">
+                <a href="https://x.com/194aac"><i class="ri-twitter-x-line ri-xl icon-header"></i></a>
+                <a href="https://github.com/4aac"><i class="ri-github-line ri-xl icon-header"></i></a>
+                <a href="https://www.linkedin.com/in/asierac/"><i class="ri-linkedin-line ri-xl icon-header"></i></a>
+                <a href="mailto:asieracunacasal19@gmail.com"><i class="ri-mail-open-line ri-xl icon-header"></i></a>
+                <a href="resume.pdf" target="_blank"><i class="ri-attachment-line ri-xl icon-header"></i></a>
+            </div>
+            
+            <!-- Dark/light mode icon -->
+            <button id="toggleMode" aria-label="Toggle Light/Dark Mode">
+                <img id="mode-icon" class="mode-icon" src="content/moon-icon.png" alt="Mode Icon">
+            </button>
+        </div>
+    </header>
+        
+    <!-- Navigation bar -->
+    <nav class="menu-nav">
+        <ul>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('library')">Library</a></li>
+            <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- About section -->
+        <section id="about" class="content-section">
+            <h2>About me</h2>
+            <p>I'm interested by the mathematical theory behind machine learning and neural networks. The combination of algebra, calculus, and probability theory empowers these systems to replicate human cognition. My interests include deep learning and reinforcement learning.</p>
+        </section>
+
+        <!-- Education section -->
+        <section id="about" class="content-section">    
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <p class="institution">IES Xunqueira I</p>
+                    <p class="year">2017 - 2023</p>
+                </div>
+                <p>Graduated from a scientific-technological high school with a 96% GPA, receiving honors, and achieved a 93% GPA on the Spanish university admission exam.</p>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <p class="institution">University of Santiago de Compostela</p>
+                    <p class="year">2023 - Present</p>
+                </div>
+                <p>BS in Artificial Intelligence, focusing on machine learning, IoT, HPC, and cloud computing, including natural models of intelligence and behavior (particularly human) derived from neuroscience, psychology, or logic.</p>
+            </div>
+        </section>
+            
+        <section id="about" class="content-section"> 
+            <div id="skills-contact">
+                <!-- Skills section -->
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Machine learning</li>
+                        <li>Deep learning</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Web development</li>
+                    </ul>
+                </div>
+
+                <!-- Contact section -->
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Phone: +34 684025456</li>
+                        <li>Mail: <a href="mailto:asier.acuna@rai.usc.es">asier.acuna@rai.usc.es</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/asierac">asierac</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="content-section" style="display: none;">
+            <p id="disclaimer-projects">Click on titles for visualization</p>
+
+            <!-- Base for the containers -->
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3><a href="#">Personal website</a></h3>
+                    <p>Simple but effective website, where I introduce myself and show my best work</p>
+                    <div class="project-footer">
+                        <ul>
+                            <li>WebDev</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <a href="https://github.com/4aac/personal-website" class="github-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="#">Personal website</a></h3>
+                    <p>Simple but effective website, where I introduce myself and show my best work</p>
+                    <div class="project-footer">
+                        <ul>
+                            <li>WebDev</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <a href="https://github.com/4aac/personal-website" class="github-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="#">Personal website</a></h3>
+                    <p>Simple but effective website, where I introduce myself and show my best work</p>
+                    <div class="project-footer">
+                        <ul>
+                            <li>WebDev</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <a href="https://github.com/4aac/personal-website" class="github-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3><a href="#">Personal website</a></h3>
+                    <p>Simple but effective website, where I introduce myself and show my best work</p>
+                    <div class="project-footer">
+                        <ul>
+                            <li>WebDev</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                        <a href="https://github.com/4aac/personal-website" class="github-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Keep adding projects here -->
+        
+        </section>
+
+        <!-- Library -->
+        <section id="library" class="content-section" style="display: none;">
+            <div class="library-container">
+                <div class="book-categories">
+                    <button onclick="filterBooks('all')">Show All</button>
+                    <button onclick="filterBooks('economy')">Economy</button>
+                    <button onclick="filterBooks('business')">Business</button>
+                    <button onclick="filterBooks('psychology')">Psychology</button>
+                    <button onclick="filterBooks('literature')">Literature</button>
+                    <button onclick="filterBooks('other')">Other</button>
+                </div>
+            </div>
+            <!-- Books will be displayed here -->
+            <div class="books-display">
+                <div data-category="economy">
+                    <h1><a href="https://www.amazon.es/Rich-Dad-Poor-Teach-Middle/dp/1612681131/ref=sr_1_1?crid=18NH14K5IVVB3&dib=eyJ2IjoiMSJ9.AaJ3BPKStGt1JOzkqMhZrzuS9eyHoE0DZgyICLDxBTDdauPBSNBsc14dSTlPHbhlSpniAjQvB1mfwdmvd4vfaLHVHuKKBcmTeGJ-tTSzbAGNb6wXRwVTIXsArRerdXdXQx28sY2_oNJ7EusEdXw2ZB-VXzRKY2CWWbFGHWELVvil3hT4edd6JCp07dkDSZSEk7CgjCb4GvnsuN-mPTu1erBs9uL-CPAYhpvM7TqDCGKpx2Vjn1J6OTaNl-7PZm87Ft2Dh2kFsUr8F5PYRzIgB9e1Q_8gMkmbmQsLqe8JvJ0.6toDD4rFDpVmaZKOMf0pVWg78ZicM4aKKGQdzhnC9b8&dib_tag=se&keywords=rich+dad+poor+dad&qid=1720095669&sprefix=rich+dad%2Caps%2C130&sr=8-1">Rich Dad Poor Dad</a></h1>
+                    <p>Robert T. Kiyosaki</p>
+                </div>
+                <div data-category="business">
+                    <h1><a href="https://www.amazon.es/Shoe-Dog-Phil-Knight/dp/1471146723/ref=sr_1_2?crid=LL0V4KE2QUX9&dib=eyJ2IjoiMSJ9.D_yRYAb28tqprV9lftQIP6Whyhgwt7MoX2qyrxsKZ06YnkwusRR9h4Dk19ghrSajGwlN8_KS-qeA89cXg725fp8i7ZSZvDs_-MG04Fsj-ttbMfce7ohniy8fXGBmV80k1WdEbf0wUq733567ynHcHr04Aq7ibQ6wgOb4TYuEyfd3w6fONZryvPyqOEdGBPo2S8JkuP3aw9KVU3jQxXV_oKyTzJO693tL3k_62l9xKVa2gZD_d6_Sv3LqitlmAlHG8lpoe3tBEp1_P0mGTEuSHbciATVS4el8AFVYUSUhn6I.MTjJ2ueMTxkxLZkyM9R9KcY2m02lQUffXmEswEWyTh8&dib_tag=se&keywords=phil+knight&qid=1720096794&sprefix=phil+kn%2Caps%2C129&sr=8-2">Shoe Dog: A Memoir by the Creator of NIKE</a></h1>
+                    <p>Phil Knight</p>
+                </div>
+                <div data-category="business">
+                    <h1><a href="https://www.amazon.es/Zero-Notes-Start-Build-Future/dp/0753555204/ref=pd_bxgy_thbs_d_sccl_1/258-2155716-9957730?pd_rd_w=zZfEA&content-id=amzn1.sym.cfceebff-276b-4b67-ad06-735b2f4350ee&pf_rd_p=cfceebff-276b-4b67-ad06-735b2f4350ee&pf_rd_r=P2BAFYXXZH9Q9FB5S46K&pd_rd_wg=xZ7GZ&pd_rd_r=fd297216-2c1a-451e-8652-880f5057b61c&pd_rd_i=0753555204&psc=1">Zero To One. Notes On Start Ups, Or How To Build The Future</a></h1>
+                    <p>Peter Thiel</p>
+                </div>
+                <div data-category="psychology">
+                    <h1><a href="https://www.amazon.es/Surrounded-Idiots-Thomas-Erikson/dp/1785042181/ref=sr_1_2?crid=2ZXLR4PVQZ3V0&dib=eyJ2IjoiMSJ9.H_7fShd2AOlEoQXeKOW6lP0_pNP2_-PiYGg-PVn8sU8VVCi1rEOLM27A1JQ_fuKfHN6Uc1nictAKQ6rFX9hqtAiMi9lF-6dorxogDSXQlnRjsMBrWEMB8827DE80zzh9r9_AA4Eg0dllYJf77_txXJzWWh1_d-1t22tvvrVh0sLNhChcdUYVYbYn5gJc_31DfIYrlhqfFuJgVI9lo_9n0luk8Au7tf05aCvdF0bRUUiWPgSxdhGZrFQv7qmsmBIyOwaVMzWG1qgQTzH-pM13gctYzr3lTcNsAjAfhlTSA-k.ASIacrHbHeXX7I63EC5nntRCSFW1LnfrACzIqqeJ0ak&dib_tag=se&keywords=surrounded+by+idiots&qid=1720097224&sprefix=surro%2Caps%2C122&sr=8-2">Surrounded By Idiots: The Four Types of Human Behaviour</a></h1>
+                    <p>Thomas Erikson</p>
+                </div>
+                <div data-category="literature">
+                    <h1><a href="https://www.amazon.es/1984-Contempor%C3%A1nea-CONTEMPORANEA-George-Orwell/dp/8499890946/ref=sr_1_5?crid=APQFFR6HGJ1N&dib=eyJ2IjoiMSJ9.67Hpfk-CwQtPO9HsudmoMKvomTjaww3Xcm-i3TyAVfJo7ze90ZD9Z-GIk4uOqXVpWAbjj3_L2AJ2UfzBKYK292NMaUpE4YklSJ5BqmQr2KfvvqCyQJyGz8XdqjCH6Y-XhfyFaOSFjthAtZtmMSez849SOXLQ9W6iCwyS3qBlv149cT_F9GitEYpTQhAgJ54Re9QEgRjQ1CiDEOGDdWBC87CQFjB98V1OIy7V4Mv2y-I7HmikZYQLSEfIj9L8F13HsItr9Vaxs1n5_zRkDCZ8t9EqcgIy55SaAV2aG0XNJFY.UIrZD95uzwg9eQ5Er4RYtXiKD4VF13dMSvfwompYEFA&dib_tag=se&keywords=1984&qid=1720097418&sprefix=19%2Caps%2C118&sr=8-5">1984</a></h1>
+                    <p>George Orwell</p>
+                </div>
+                <div data-category="other">
+                    <h1><a href="https://www.amazon.es/Atomic-Habits-MR-EXP-Proven-Build/dp/0593189647/ref=sr_1_1?crid=2UDTY6757O9A8&dib=eyJ2IjoiMSJ9.JECMWIgIFctOvwfhksQfIcra8ePPYdKvd7EQN_cJlTjarXjfYeWbkFP6AdHNy458-z2POp58bfQapTTbqJSZusLQA2CeAWC2aihEJgpsUuW1piTqHn74i8x9Y9-VUn9G6hfugxkXxatdgKvfXPmVy6G7pSTDZ_wXl3HchJkz5UcNJV9QfrtECOo-hq9wOlRYZpdquDRllykl56VZ-42Ab-BFH3S7nZCBRtcBzVtKdLlWZAVHRxsIFpIAO_fhcF69I7sdWWQDXPNj3-I9quaaWrdYTrVn1kVbNUBPn0xRJW8.csh7hd9V2n-f8mcXNudF3ZOOTDjFABP3l4ngOD-Qf38&dib_tag=se&keywords=atomic+habits&qid=1720097559&sprefix=atomic+%2Caps%2C120&sr=8-1">Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</a></h1>
+                    <p>James Clear</p>
+                </div>
+                <div data-category="psychology">
+                    <h1><a href="https://www.amazon.es/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576/ref=sr_1_1?crid=3TBBAAT4HLO3Y&dib=eyJ2IjoiMSJ9.9M2TZEhPXvKyTHGFYOjgd_saVYxXb_GyRzWGe3msScxpC3E5107kaGpBKcUl1lounos4V7FLtwWYjMiU6D5xY4OPZm333vI6ZzVg7rujoCFS6jn1S-Pv9Fi93I9odUC7YfiQOgY-p-uGw8TX0Ek0UpvDlJF9_DlDIaG2Ik66K-FBtj9aFw4pV6ZNGhkXk0y9biGPNzKICqNKLgamt0RZIjX8LAR0IJg4Elqxjix8Hjp2mHwVxtQEfIxOqJVf48EpM5SIJaBy7Qd7jFJYrxnyqRYjd94Rei47-5YIe5rCiE4.eQM9cJW3ZIFh0k0XOfrIUzNXf1PrG1SV1EfYSg3o9pI&dib_tag=se&keywords=thinking+fast+and+slow&qid=1720097725&sprefix=think%2Caps%2C124&sr=8-1">Thinking, fast and slow</a></h1>
+                    <p>Daniel Kahneman</p>
+                </div>
+                <div data-category="economy">
+                    <h1><a href="https://www.amazon.es/Bitcoin-Standard-Decentralized-Alternative-Central/dp/1119473861/ref=sr_1_1?crid=1O6YDYEDBIXNV&dib=eyJ2IjoiMSJ9.RduNKlQYzN1K_g1MPhap8AQgkotMpuBOcAvCxm6ZgvhA0PQd32pS0wq6UeDTVS1FhEMFPu8IlyBmY6g4AjPM85WOH6AI4wW1MdDZOD5inRtInsA0tJWWfCWNpqlscQSel6lEgcVmSqlqkY2CS96oPeU6_ztacvtEccqi57XMwt7jtALblxTz2mekRis1vHipfY2TbnQEWsf25YRhiAGxdxfrYmd6KyW6J3J93AIuiLS7pPkWZ3UZ1KjqPptgzBf5FC8cy_LIzWsMxbln9ml_1kuajGNPCEOxcP9GQ1rVRak.iFv93O3vNh8OxAhpVYE0lNKpx36x_CxrqSglDOaGjyg&dib_tag=se&keywords=bitcoin+standard&qid=1720097871&sprefix=bitcoin+s%2Caps%2C120&sr=8-1">The Bitcoin Standard: The Decentralized Alternative to Central Banking</a></h1>
+                    <p>Saifedean Ammous</p>
+                </div>
+                <div data-category="business">
+                    <h1><a href="https://www.amazon.es/Steve-Jobs-English-Walter-Isaacson-ebook/dp/B004W2UBYW/ref=sr_1_1?crid=1M6JXSU70MPIH&dib=eyJ2IjoiMSJ9.iDaqMMYdnvBxIMLD8P3euLIpTcv8jUUf3JEYzx76BRFtOtdlVKlbMEd2ALj5b8cNXKGXgFlPQ5OkroH95CnxkXTQB5kFjipT4FC94o8oo23HDfSOBhoXdfd4G9VhT2hkVdfHgPnkzha3RvR4Zx2lrbr4-aIgcCxnKhW0XUDVUmx8c7vDpCBQlUGKvBFWc7C5V5oF1_cfJ31pRDJT5RFSMT1YDMTrA-K4mU6DGvLFZ153Y_Qm48pPAYXERtapi23-MSehLADptiSbIVoWA63Yeq10UHTZqBICMo4Fyx4KaX4.OcPWSZQ1rucNuYVFjLFzj_XTxe9uEXnO2-pilIJcorA&dib_tag=se&keywords=steve+jobs+english&qid=1720098036&sprefix=steve+jobs+engls%2Caps%2C120&sr=8-1">Steve Jobs</a></h1>
+                    <p>Walter Isaacson</p>
+                </div>
+                <div data-category="other">
+                    <h1><a href="https://www.amazon.es/Art-War-Sun-Tzu/dp/1721195092/ref=sr_1_1?crid=1CIJ8VL5PY7LC&dib=eyJ2IjoiMSJ9.4tOb_F1jLpN_WtGEybauCIObsUEMh3hvlurYPdsBU5K5geM2of_vxrQ4ErGn1xiiSfZP2XHE29UpfHmVR88G4IU0VJ7qXzWJ2KRLPcthcSp5EDLeMILQy2MJYvjAsbR3vYrnPGQN33TaqnW68TCiqBgMoX1vrQcnVKrgOVpfMqtb8MnN7YfV3hrwM2mXvhrxyEG8kAq0dhK0-UgJoymkFyrPZ5fzdjd22-ipPq8mL1jAmtpmbvvsKP3j7XMvY2qhEF4hrx1DSE2P5mUTgyseftFfX-DqrdUxt85c_psRYoY.7hm4cmisRoNIt3hMEXcg6FFQKLOs7VY57Sx1hQOysLo&dib_tag=se&keywords=art+of+war&qid=1720098157&sprefix=art+of+%2Caps%2C120&sr=8-1">The Art of War</a></h1>
+                    <p>Sun Tzu</p>
+                </div>
+                <div data-category="economy">
+                    <h1><a href="https://www.amazon.es/Psychology-Money-Timeless-lessons-happiness/dp/0857197681">The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness</a></h1>
+                    <p>Morgan Housel</p>
+                </div>
+                <div data-category="business">
+                    <h1><a href="https://www.amazon.es/Personal-MBA-World-Class-Business-Education/dp/0670919535/ref=sr_1_1?crid=ZQ3IH76K04D5&dib=eyJ2IjoiMSJ9.IHvhbs-OjcoxxG8B6qlLvxxw0b9-LsZKLpKmiP8SCooXc8OiIc_r67n6YuLjs0tyO-6MZv8FogQr_2dfARkcDgl8H3DpzRTsAuNy8VEM6vEdQIDE7ojoaW2PiE6KRVWvMkZ2sMjl8TgimtcmtkQ4lG2iCgayHrqJUVsPQH4QWCJXjtBtY9hKKHVcutyess96A-l1E85naNLckMyhfDtWQymXwIl7ZW12P0UNHDJ8QWlgaEYeTXi0JhpqCPCkWM5XCgaAgnCgLDEzaD_33i2GVhT4kj8gmNVPGOyeOhBnA9A.NiCE0w2smW87OO1BS7xNcLMFxeqKr_uerE9q5Xfylkk&dib_tag=se&keywords=personal+mba&qid=1720098487&sprefix=personla+m%2Caps%2C120&sr=8-1">The Personal MBA</a></h1>
+                    <p>Josh Kaufman</p>
+                </div>
+                <div data-category="economy">
+                    <h1><a href="https://www.amazon.es/One-Up-Wall-Street-Fireside/dp/0743200403/ref=sr_1_1?crid=6U0G9KH9DZ59&dib=eyJ2IjoiMSJ9.x4y0QGpQdoNIUGIEe7q8UoRrmG-2yCFZQB0x768M6FQ.1yxv5Q9gv0w0SiELqQ6rcjVGeGEvyZLd8JZhAMv6IvE&dib_tag=se&keywords=one+up+on+wall+street+espa%C3%B1ol&qid=1720098602&sprefix=one+up+e%2Caps%2C114&sr=8-1">One Up On Wall Street</a></h1>
+                    <p>Peter Lynch</p>
+                </div>
+                <div data-category="economy">
+                    <h1><a href="https://www.amazon.es/Beating-Street-Lynch/dp/0671891634/ref=sr_1_1?crid=3C54Z3DJ4BGSZ&dib=eyJ2IjoiMSJ9.wOeDbMEWUgpoTb2pYi1MxKfwGLuCLMErC_6FXee5Ep2-0WN5z243EJDD0NVM2SQ9u0xwsAu_ORHcVLqRSFEJzZhvrEqh_9yKLeWAltXBp3h4byN2Kql0RIrBekFuo7G5qXhY4uwOl4KPpClSdZ3lMPQRpr1R74IHxYFkNVqN-M0Rv05KLWDQI6u7jzCjsAYgPQNfbXRqSJjpE8IvULcpskz980j4sGXb7Q1LPrs6tTkbged2squlfbCpqvEt8zaDwOpf-thqpNmmdJGTLpM-9r7yIgGbXEWHVF0IsokNav8.uX3DoOUNwJRBQAhbdS8AG1jzd1IdvTA8sy64dvVYuno&dib_tag=se&keywords=beating+the+street&qid=1720098766&sprefix=beating+the%2Caps%2C107&sr=8-1">Beating the Street</a></h1>
+                    <p>Peter Lynch</p>
+                </div>
+                <div data-category="economy">
+                    <h1><a href="https://www.amazon.es/Haz-crecer-dinero-experiencia-inversores/dp/8423433625/ref=sr_1_2?crid=ESAUG2OFKHTD&dib=eyJ2IjoiMSJ9.NCjK5pvj7Xcfnydb6HBN9NSPJS4r31pWc12YAF9NYzZOrNRXaoqq5Md1lrB6AYU5ETaR8HcR4iMxRLqz8uIU9DFYd_OTzDozPeQzgUxbUj0rcp3ZwqRxDrHFhRk3ZH7TdyVC_zdtBCf0hveSCSdei4ohgImIrutLuXxU8XhXMAlv0ifiL9fXvc3SEcJJypNF2thZ31oBixdVr4VaP-pREPEuokwmvVORMHYCJZ8ToC2qTXqm3jLT8aDQ1XFMRDAMagK3PG7HHcnYxyLp5v2s0-brjUO4nyfHuMpD79lmVNs.MvwT_UIGPOekh-pDffbrKf1MEUm0yGUYBX7n0pnd8XY&dib_tag=se&keywords=daniel+lacalle&qid=1721149405&s=books&sprefix=daniel+laca%2Cstripbooks%2C146&sr=1-2">Grow your money: My experience with the best investors in the world</a></h1>
+                    <p>Daniel Lacalle</p>
+                </div>
+                <div data-category="literature">
+                    <h1><a href="https://www.amazon.es/Diary-Frank-Blackie-Abridged-Fiction/dp/0141345357/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3LZ5IW8H6F5KX&dib=eyJ2IjoiMSJ9.zO7HVZfjDwT1s-rMq5NYs3m7pBeO9f2K7LMEnhuOUD7SdEMsFt7CHtXtrqBzZTlBcoGLUzfe0P4C0UvcbXjKku4Wwad6Ld_-K78SJKHVZLZAHds48w8Qrf4utNB9NwpUPv4NpTnYDxGh8s9PoqP6QHCH8q2R4h3KSs9k9tcUMegc5cxc8eo9qXkeL5KGzgIyyafVYRi-dPIODYMfqh6REXpGkMW7lPXryxfN3pDNUl6N9BXTzTWFafCaeIvCJYkznel8pAzOvIb9CGNLTVIIsk95ZQeX49rwvx3KneHP3so.mVCitlNxPLWA_Q-lpNgFm8IUNTwvXaKV_JOZEGMYZqY&dib_tag=se&keywords=diary+of+ana+frank&qid=1721149519&s=books&sprefix=diary+of+ana+frank%2Cstripbooks%2C122&sr=1-1">The Diary Of Anne Frank</a></h1>
+                    <p>Anne Frank</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="content-section" style="display: none;">
+            <div id="blog-posts" class="blog-posts-container">
+                <!-- Blog posts will be inserted here dynamically -->
+            </div>
+        </section>
+
+        <!-- Post detail section -->
+        <section id="post-detail" class="content-section" style="display: none;">
+            <button onclick="showSection('blog')" class="back-button">Back</button>
+            <article id="full-post" class="blog-post"></article>
+        </section>
+    </main>
+    <footer class="copyright">
+        <p>Copyright &copy; 2024 All rights reserved</p>
+    </footer>
+</body>
+</html>
